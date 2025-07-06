@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نسخ سيرفر ديسكورد</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-copy"></i> أداة نسخ سيرفر ديسكورد</h1>
+    <form id="copyForm">
+      <label for="sourceServer">🧭 ID السيرفر المصدر:</label>
+      <input type="text" id="sourceServer" required>
+
+      <label for="targetServer">🎯 ID السيرفر الهدف:</label>
+      <input type="text" id="targetServer" required>
+
+      <div class="options">
+        <label><input type="checkbox" id="everything"> نسخ كل شيء 🔁</label>
+        <label><input type="checkbox" id="roles"> نسخ الرولات 🎭</label>
+        <label><input type="checkbox" id="channels"> نسخ الرومات 📚</label>
+        <label><input type="checkbox" id="emojis"> نسخ الإيموجي 😄</label>
+      </div>
+
+      <button type="submit">🚀 ابدأ النسخ</button>
+    </form>
+    <div id="result"></div>
+  </div>
+</body>
+</html>
